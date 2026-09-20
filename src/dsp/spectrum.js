@@ -125,12 +125,6 @@ export function computeSpectrum(
                 imag[k]
             );
 
-        /*
-         * Correct for:
-         *
-         * 1. FFT scaling by window sum
-         * 2. One-sided spectrum
-         */
         let amplitude =
             fftMagnitude /
             normalization;
